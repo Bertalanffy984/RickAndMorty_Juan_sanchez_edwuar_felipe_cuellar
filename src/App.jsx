@@ -9,6 +9,20 @@ function App() {
       <Header></Header>
       <SectionIntro></SectionIntro>
     </section>
+    <main>
+    <section>
+      // Personajes
+    </section>
+    <section>
+      // Episodios
+    </section>
+    <section>
+      // Locaciones
+    </section>
+    </main>
+    <footer>
+      // Footer
+    </footer>
     </>
   );
 }
