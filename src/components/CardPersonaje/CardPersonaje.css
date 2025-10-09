@@ -1,0 +1,29 @@
+.campo_text{
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.campo_edad{
+    /* sx={{ color: "text.primary", fontWeight: 'bold',border:'solid',borderRadius:'20px', padding:'2px 8px'}} */
+    border: solid 1px;
+    border-radius: 20px;
+    padding: 2px 8px;
+}
+.campoEstado{
+    font-weight: bold;
+    border: solid 1px;
+    border-radius: 20px;
+    padding: 2px 8px;
+}
+.campo_text_frase{
+    font-style: italic;
+}
+.padding_tarjeta{
+    padding-top:10px;
+}
+.color_verde{
+    color: rgb(128, 204, 14);
+}
+.color_rojo{
+    color: rgb(218, 20, 20);
+}
