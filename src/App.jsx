@@ -2,6 +2,7 @@ import Header from "./components/Header/Header";
 import SectionIntro from "./components/SectionIntro/SectiionIntro";
 import PersonajesPage from "./pages/Personajes/PersonajesPage";
 import EpisodiosPage from "./pages/Episodios/EpisodiosPage";
+import LocalidadesPage from "./pages/Localidades/LocalidadesPage";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "./App.css";
 
@@ -18,8 +19,7 @@ function App() {
             <Routes>
               <Route path="/personajes" element={<PersonajesPage />} />
               <Route path="/episodios" element={<EpisodiosPage/>} />
-              {/* ruta episodios */}
-              {/* ruta localidades */}
+              <Route path="/localidades" element={<LocalidadesPage />} />
             </Routes>
           </section>
         </main>

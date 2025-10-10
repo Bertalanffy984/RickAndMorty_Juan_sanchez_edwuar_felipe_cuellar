@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 
 const CardEpisodios = ({ props }) => {
   return (
-      <article className="bg-white rounded-2xl shadow-md overflow-hidden hover:shadow-2xl hover:scale-105 transition-transform duration-300">
+      <article className="group bg-white rounded-2xl shadow-md overflow-hidden border border-transparent hover:bg-yellow-100 hover:shadow-2xl hover:scale-105 hover:border-yellow-400 transition-all duration-300">
         <img
           src={`https://cdn.thesimpsonsapi.com/500${props.image_path}`}
           alt={`Imagen del episodio ${props.name}`}

@@ -15,10 +15,14 @@ const EpisodiosPage = () => {
   });
   return (
     <>
-      <TituloPersonaje titulo="Episodio de los Simpsons" parrafo="disfuta de nuestros episodios, en la mejor calidad" />
-      {episodios.map((episodio) => (
-        <CardEpisodios key={episodio.id} props={episodio} />
-      ))}
+    <TituloPersonaje titulo="Episodio de los Simpsons" parrafo="disfuta de nuestros episodios, en la mejor calidad" />
+    <div className="grid gap-8 md:grid-cols-3 lg:grid-cols-5 p-6">
+        {episodios.map((episodio) => (
+            <CardEpisodios key={episodio.id} props={episodio} />
+        ))}
+    </div>
+      
+      
       <Paginacion count={5} page={page} onChange={(event, value) => { setPage(value)}} variant="outlined"/>
     </>
   );
