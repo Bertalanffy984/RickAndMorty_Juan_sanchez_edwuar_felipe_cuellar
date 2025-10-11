@@ -1,13 +1,16 @@
 import Header from "./components/Header/Header";
+import Footer from "./components/Footer/Footer";
 import SectionIntro from "./components/SectionIntro/SectiionIntro";
 import PersonajesPage from "./pages/Personajes/PersonajesPage";
 import EpisodiosPage from "./pages/Episodios/EpisodiosPage";
+import SonidoEntrada from './components/SonidoEntrada/SonidoEntrada'
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "./App.css";
 
 function App() {
   return (
     <>
+    <SonidoEntrada/>
       <Router>
         <section>
           <Header />
@@ -23,7 +26,7 @@ function App() {
             </Routes>
           </section>
         </main>
-        <footer className="">// Footer</footer>
+        <Footer/>
       </Router>
     </>
   );

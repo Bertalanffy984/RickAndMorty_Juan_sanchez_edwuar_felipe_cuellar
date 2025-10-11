@@ -1,4 +1,3 @@
-
 const SectionIntro = () => {
   return (
     <>
