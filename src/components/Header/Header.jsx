@@ -19,9 +19,9 @@ const Lista=()=>{
     <>
         <nav>
             <ul className="flex items-center gap-10 h-full font-medium sm:text-base text-sm">
-                <li><Link to="/personajes">Personajes</Link></li>
-                <li><Link to="/episodios">Episodios</Link></li>
-                <li><Link to="/localidades">Localidades</Link></li>
+                <li><Link to="/personajes" className="hover:border-b-4 hover:border-amber-300 focus:border-b-4 focus:border-amber-300 ">Personajes</Link></li>
+                <li><Link to="/localidades" className="hover:border-b-4 hover:border-amber-300 focus:border-b-4 focus:border-amber-300 ">Localidades</Link></li>
+                <li><Link to="/episodios" className="hover:border-b-4 hover:border-amber-300 focus:border-b-4 focus:border-amber-300 ">Episodios</Link></li>
                 <li className="h-full"><a href="#"><img src="https://img.icons8.com/?size=100&id=iAmlVpsW8TOS&format=png&color=000000"
                  className="sm:h-full sm:w-auto sm:block hidden" alt="iconoHOmero"/></a></li>
             </ul>

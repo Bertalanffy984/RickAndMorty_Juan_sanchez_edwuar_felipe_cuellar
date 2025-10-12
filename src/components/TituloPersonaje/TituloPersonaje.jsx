@@ -4,7 +4,7 @@ const TituloPersonaje = (props) => {
   return (
     <>
         <h3 className="w-full text-4xl text-center font-bold">{titulo}</h3>
-        <p className="w-full text-center text-xl mb-20">{parrafo}</p>
+        <p className="w-full text-center text-xl mb-10">{parrafo}</p>
     </>
   );
 };

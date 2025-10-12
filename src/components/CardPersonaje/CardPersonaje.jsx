@@ -1,4 +1,4 @@
-import * as React from "react";
+import { Link } from "react-router-dom";
 import CardActions from "@mui/material/CardActions";
 import CardContent from "@mui/material/CardContent";
 import Typography from "@mui/material/Typography";
@@ -6,9 +6,10 @@ import "./CardPersonaje.css"
 import { useState } from "react";
 
 const CardPersonaje = ({props}) => {
-  const {portrait_path,name,occupation,age,status,phrases}=props
+  const {portrait_path,name,occupation,age,status,phrases=[]}=props
   const [inside, SetInside]=useState(false)
   return (
+    <Link to={`/card/characters/${props.id}`}>
     <div 
     className={`w-full sm:w-[350px] sm:h-[350px] lg:w-[260px] lg:h-[340px]
     padding_tarjeta shadow-md transition-all ease-in-out duration-100
@@ -18,7 +19,7 @@ const CardPersonaje = ({props}) => {
     >
       <div className={`h-[125px] w-[125px] m-auto shadow-lg transition-all ease-in-out duration-200
         ${inside?'rotate-4 scale-115 shadow-amber-300':''}`}>
-        <img src={`https://cdn.thesimpsonsapi.com/500${portrait_path}`} alt="personajeSerie" />
+        <img src={`https://cdn.thesimpsonsapi.com/500${props.portrait_path}`} alt="personajeSerie" />
       </div>
       <CardContent>
           <ContenidoTarjeta name={name} occupation={occupation}/>
@@ -28,9 +29,10 @@ const CardPersonaje = ({props}) => {
       <ContenedorEstado status={status}/>
       </CardActions>
       <CardContent>
-        <FraseDestacada phrases={phrases[0]}></FraseDestacada>
+        <FraseDestacada phrases={phrases[0]}/>
       </CardContent>
     </div>
+    </Link>
   );
 };
 export default CardPersonaje;
