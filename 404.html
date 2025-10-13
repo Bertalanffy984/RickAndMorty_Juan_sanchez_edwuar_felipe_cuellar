@@ -1,3 +1,6 @@
 <script>
-  window.location.replace("/ApiSimpsons_2025IIg1_Juan_Sanchez_Edwuar_Cuellar" + window.location.pathname);
+  const base = "/ApiSimpsons_2025IIg1_Juan_Sanchez_Edwuar_Cuellar";
+  if (!window.location.pathname.startsWith(base)) {
+    window.location.replace(base + window.location.pathname);
+  }
 </script>
